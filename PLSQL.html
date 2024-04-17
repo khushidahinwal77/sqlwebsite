@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL/SQL</title>
+    <link rel="stylesheet" href="/website/style.css">
+</head>
+<body>
+    <div id="2Darr4">
+        <!-- <H1 style="background-color: rgb(148, 167, 228);  margin-top: 500px;align-items: center;border-radius: 5px; padding-left: 600px;">PL/SQL</H1> -->
+        <a href="#" style="display: inline-block;font-size: 30px; padding: 20px 30px; background-color: #76cc69; color: white;margin-left: 650PX; text-align: center; text-decoration: none; border-radius: 5px; border: none; 
+        font-family: 'Times New Roman', Times, serif; margin-top: 100PX;
+    ">PL/SQL</a>
+        <pre>
+        <p>Quesion No. -4 example of pl/sql control statements </p>
+        <code>
+
+
+        IF 
+ 
+                                DECLARE  
+            a number(3) := 500;  
+            BEGIN  
+            -- check the boolean condition using if statement   
+            IF( a < 20 ) THEN  
+                -- if condition is true then print the following    
+                dbms_output.put_line('a is less than 20 ' );  
+            ELSE  
+                dbms_output.put_line('a is not less than 20 ' );  
+            END IF;  
+            dbms_output.put_line('value of a is : ' || a);  
+            END; 
+
+        CASE 
+                            DECLARE  
+            grade char(1) := 'A';  
+            BEGIN  
+            CASE grade  
+                when 'A' then dbms_output.put_line('Excellent');  
+                when 'B' then dbms_output.put_line('Very good');  
+                when 'C' then dbms_output.put_line('Good');  
+                when 'D' then dbms_output.put_line('Average');  
+                when 'F' then dbms_output.put_line('Passed with Grace');  
+                else dbms_output.put_line('Failed');  
+            END CASE;  
+            END;  
+
+        EXIT loop
+
+        DECLARE  
+        i NUMBER := 1;  
+        BEGIN  
+        LOOP  
+        EXIT WHEN i>10;  
+        DBMS_OUTPUT.PUT_LINE(i);  
+        i := i+1;  
+        END LOOP;  
+        END;  
+
+
+        WHILE loop
+        DECLARE  
+        i INTEGER := 1;  
+        BEGIN  
+        WHILE i <= 10 LOOP  
+        DBMS_OUTPUT.PUT_LINE(i);  
+        i := i+1;  
+        END LOOP;  
+        END;                  
+
+
+        FOR loop
+        BEGIN  
+        FOR k IN 1..10 LOOP  
+        -- note that k was not declared  
+        DBMS_OUTPUT.PUT_LINE(k);  
+        END LOOP;  
+        END;   
+
+        CONTINUE
+
+        BEGIN  
+        FOR k IN 1..10 LOOP  
+        -- note that k was not declared  
+        DBMS_OUTPUT.PUT_LINE(k);  
+        END LOOP;  
+        END;   
+        
+        
+        GOTO
+
+        DECLARE  
+        a number(2) := 30;  
+     BEGIN  
+        <<loopstart>>  
+        -- while loop execution   
+        WHILE a < 50 LOOP  
+           dbms_output.put_line ('value of a: ' || a);  
+           a := a + 1;  
+           IF a = 35 THEN  
+              a := a + 1;  
+              GOTO loopstart;  
+           END IF;  
+        END LOOP;  
+     END;  
+     /  
+     After the execution o
+
+
+        </code>
+        <p>Output-</p>
+        <code>
+
+            IF
+
+            a is not less than 20
+            value of a is : 500   
+            
+            case
+
+            Excellent
+
+
+
+            EXIT
+                    1
+                    2
+                    3
+                    4
+                    5
+                    6
+                    7
+                    8
+                    9
+                    10            
+                
+             WHILE   
+                    1
+                    2
+                    3
+                    4
+                    5
+                    6
+                    7
+                    8
+                    9
+                    10                        
+                
+                FOR
+
+                    1
+                    2
+                    3
+                    4
+                    5
+                    6
+                    7
+                    8
+                    9
+                    10
+                
+                    CONTINUE
+                      
+                    Inside loop:  x = 0
+                    Inside loop:  x = 1
+                    Inside loop:  x = 2
+                    Inside loop, after CONTINUE:  x = 3
+                    Inside loop:  x = 3
+                    Inside loop, after CONTINUE:  x = 4
+                    Inside loop:  x = 4
+                    Inside loop, after CONTINUE:  x = 5
+                    After loop:  x = 5
+                     
+                    GOTO
+
+                    value of a: 30
+                    value of a: 31
+                    value of a: 32
+                    value of a: 33
+                    value of a: 34
+                    value of a: 36
+                    value of a: 37
+                    value of a: 38
+                    value of a: 39
+                    value of a: 40
+                    value of a: 41
+                    value of a: 42
+                    value of a: 43
+                    value of a: 44
+                    value of a: 45
+                    value of a: 46
+                    value of a: 47
+                    value of a: 48
+                    value of a: 49                            
+        </code>
+        </pre>
+        <div class="borderline"></div>
+    </div>
+    <div id="2Darr5">
+        <pre>
+        <p>Quesion No. -5 example of procedure</p>
+        <code>
+
+            create table user(id number(10) primary key,name varchar2(100)); 
+
+
+           Now write the procedure code to insert record in user table.
+
+           create or replace procedure "INSERTUSER"    
+           (id IN NUMBER,    
+           name IN VARCHAR2)    
+           is    
+           begin    
+           insert into user values(id,name);    
+           end;    
+           /       
+        </code>
+        <p>Output-</p>
+        <code>
+            Procedure created. 
+        </code>
+        </pre>
+        <div class="borderline"></div>
+    </div>
+    <div id="2Darr6">
+        <pre>
+        <p>Quesion No. -6 example of function in pl/sql</p>
+        <code>
+             
+                create or replace function adder(n1 in number, n2 in number)    
+                return number    
+                is     
+                n3 number(8);    
+                begin    
+                n3 :=n1+n2;    
+                return n3;    
+                end;    
+                / 
+                
+                Now write another program to call the function.
+
+                DECLARE    
+                n3 number(2);    
+                BEGIN    
+                n3 := adder(11,22);    
+                dbms_output.put_line('Addition is: ' || n3);    
+                END;    
+                /    
+
+                    
+        </code>
+        <p>Output-</p>
+        <code>
+            Addition is: 33
+
+        </code>
+        </pre>
+        <div class="borderline"></div>
+    </div>
+    <div id="2Darr7">
+        <pre>
+        <p>Quesion No. -7 example of cursor in pl/sql</p>
+        <code>
+            DECLARE   
+            total_rows number(2);  
+         BEGIN  
+            UPDATE  customers  
+            SET salary = salary + 5000;  
+            IF sql%notfound THEN  
+               dbms_output.put_line('no customers updated');  
+            ELSIF sql%found THEN  
+               total_rows := sql%rowcount;  
+               dbms_output.put_line( total_rows || ' customers updated ');  
+            END IF;   
+         END;  
+         /  
+        </code>
+        <p>Output-</p>
+        <code>
+            6 customers updated
+            PL/SQL procedure successfully completed.
+        </code>
+        </pre>
+        <div class="borderline"></div>
+    </div>
+    <div class="nav2">
+        <div class="logo2">
+            <p id="strings">Strings</p>
+        </div>
+        <p id="qcount">Questions=30</p>
+    </div>
+    <div id="str1">
+        <pre>
+        <p>Quesion No. - 1 example of exception in ol/sql
+        </p>
+        <code>
+
+            DECLARE  
+            c_id customers.id%type := 8;  
+            c_name  customers.name%type;  
+            c_addr customers.address%type;  
+         BEGIN  
+            SELECT  name, address INTO  c_name, c_addr  
+            FROM customers  
+            WHERE id = c_id;  
+         DBMS_OUTPUT.PUT_LINE ('Name: '||  c_name);  
+          DBMS_OUTPUT.PUT_LINE ('Address: ' || c_addr);  
+         EXCEPTION  
+            WHEN no_data_found THEN  
+               dbms_output.put_line('No such customer!');  
+            WHEN others THEN  
+               dbms_output.put_line('Error!');  
+         END;  
+         /                       
+    
+        </code>
+        <p>Output-</p>
+        <code>
+
+    No such customer!
+    PL/SQL procedure successfully completed.
+        </code>
+        </pre>
+        <div class="borderline"></div>
+    </div> 
+    <div id="str2">
+        <pre>
+        <p>Quesion No. - 2 example of triggers in pl/sql
+        </p>
+        <code>
+            CREATION OF TRIGGER
+            CREATE OR REPLACE TRIGGER display_salary_changes  
+            BEFORE DELETE OR INSERT OR UPDATE ON customers  
+            FOR EACH ROW  
+            WHEN (NEW.ID > 0)  
+            DECLARE  
+               sal_diff number;  
+            BEGIN  
+               sal_diff := :NEW.salary  - :OLD.salary;  
+               dbms_output.put_line('Old salary: ' || :OLD.salary);  
+               dbms_output.put_line('New salary: ' || :NEW.salary);  
+               dbms_output.put_line('Salary difference: ' || sal_diff);  
+            END;  
+            /  
+
+
+            Use the following code to get the old salary, new salary and salary difference after the trigger created.
+                                    DECLARE   
+                total_rows number(2);  
+                BEGIN  
+                UPDATE  customers  
+                SET salary = salary + 5000;  
+                IF sql%notfound THEN  
+                    dbms_output.put_line('no customers updated');  
+                ELSIF sql%found THEN  
+                    total_rows := sql%rowcount;  
+                    dbms_output.put_line( total_rows || ' customers updated ');  
+                END IF;   
+                END;  
+                /  
+
+        </code>
+        <p>Output-</p>
+        <code>
+            Trigger created.
+
+
+
+            Old salary: 20000
+            New salary: 25000
+            Salary difference: 5000
+            Old salary: 22000
+            New salary: 27000
+            Salary difference: 5000
+            Old salary: 24000
+            New salary: 29000
+            Salary difference: 5000
+            Old salary: 26000
+            New salary: 31000
+            Salary difference: 5000
+            Old salary: 28000
+            New salary: 33000
+            Salary difference: 5000
+            Old salary: 30000
+            New salary: 35000
+            Salary difference: 5000
+            6 customers updated
+    
+        </code>
+        </pre>
+</body>
+</html>
+</body>
+</html>

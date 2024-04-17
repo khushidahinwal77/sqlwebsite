@@ -1,0 +1,2896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/website/style.css">
+    <title>Document</title>
+    <style>
+        .home{
+            background: url(back2.jpg);
+            position: relative;
+       height: 100vh;
+       width: 100%;
+       opacity: 85%;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    align-items: center ;
+        }
+    </style>
+
+</head>
+<body>
+    <section class="home" id="home">
+    <header>
+        <!-- <div class="logo">
+            <h1>Code With Khushi</h1>
+        </div> -->
+        <nav>
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="SQL.html">SQL</a></button>
+                        <button class="dropbtn"><a href="PLSQL.html">PL/SQL</a></button>
+                       </div>
+                       </li>
+                       </ul>
+                       <h1 style="color: rgb(73, 168, 194); font-size: 24px; text-align: center;font-size: 200px; margin-left: 450px;margin-top: 250px;">DBMS</h1>
+                    </section>
+                        <!-- <button class="dropbtn"><a href="#arrays">Arrays</a></button> -->
+                        <!-- <div class="dropdown-content">
+                            <a href="#arr1">Enter an array from user and display all the value ?</a>
+                            <a href="#arr2">Enter an array from user and print the array in reverse order ?</a>
+                            <a href="#arr3">Enter an array from user and copy the array into second array ?</a>
+                            <a href="#arr4">Enter an array from user and copy it into another array in reverse order ?</a>
+                            <a href="#arr5">Enter an array from user and print the number which is even ?</a>
+                            <a href="#arr6">Enter an array from user and print the number which is positive ?</a>
+                            <a href="#arr7">Enter an array from user and square all the values of array ?</a>
+                            <a href="#arr8">Enter an array from user and find maximum and minimum value?</a>
+                            <a href="#arr9">Enter an array from user and find the k-th smallest value?</a>
+                            <a href="#arr10">Enter an array from user and add all values ?</a>
+                            <a href="#arr11">Enter an array from user and find the duplicate values?</a>
+                            <a href="#arr12">Enter an array from user and remove the duplicate values and fill with zero?</a>
+                            <a href="#arr13">Enter an array from user and count the duplicate values?</a>
+                            <a href="#arr14">Enter an array from user and print all possible combinations of the elements?</a>
+                            <a href="#arr15">Enter an array from user and print all the palindrone numbers?</a>
+                            <a href="#arr16">Enter two arrays from the user and check they are same or not?</a>
+                            <a href="#arr17">Merge the two sorted arrays into one array but in sorted order?</a>
+                            <a href="#arr18">Find the local minima in the array?</a>
+                            <a href="#arr19">Find the local maxima in the array?</a>
+                            <a href="#arr20">Trapping Rain Water Problem.</a>
+                        </div> -->
+                    <!-- </div>
+                </li>
+                <li>
+                    <div class="dropdown"> -->
+                        <!-- <button class="dropbtn"><a href="#2Darrays">2D Arrays</a></button> -->
+                        <!-- <div class="dropdown-content">
+                            <a href="#2Darr1">Enter a matrix of 4 rows and 2 columns from the user display it in matrix format?</a>
+                            <a href="#2Darr2">Enter two Matrices from user, add the matrices and display the answer?</a>
+                            <a href="#2Darr3">Enter two Matrices from user, subtract the matrices and display the answer?</a>
+                            <a href="#2Darr4"> Enter two Matrices from user, multiply the matrices and display the answer?</a>
+                            <a href="#2Darr5"> Enter a Matrix from user, copy it in another matrix of same size?</a>
+                            <a href="#2Darr6">Enter the Matrix from user, multiply it with a scalar value and display the answer?</a>
+                            <a href="#2Darr7">Create a tic tac toe game using 2D Arrays.</a>
+                        </div> -->
+                    <!-- </div>
+                </li>
+                
+                <li><div class="dropdown">
+                    <button class="dropbtn"><a href="#strings">Strings</a></button>
+                    <div class="dropdown-content">
+                        <a href="#str1">Convert in uppercase ?</a> 
+                        <a href="#str2">Convert into lowercase ?</a> 
+                        <a href="#str3">Convert into sentence case ?</a> 
+                        <a href="#str4">Convert into title case ?</a> 
+                        <a href="#str5">Convert into toggle case ?</a> 
+                        <a href="#str6">Final length of the string ?</a> 
+                        <a href="#str7">Compare those string ?</a> 
+                        <a href="#str8">Concatenate the string ?</a> 
+                        <a href="#str9">Copy that string into another string ?</a> 
+                        <a href="#str10">Enter bound number and print character on that bound ?</a> 
+                        <a href="#str11">Check its palindrome or not?</a> 
+                        <a href="#str12">Print each character in new line ?</a> 
+                        <a href="#str13">Copy reverse order into another string ?</a> 
+                        <a href="#str14">2 strings and print difference each character ?</a> 
+                        <a href="#str15">Enter a character , it is exist or not ?</a> 
+                        <a href="#str16">Enter a character if it is exist then print the bound number ?</a> 
+                        <a href="#str17">Count all vowels ?</a> 
+                        <a href="#str18">Convert into integer?</a> 
+                        <a href="#str19">Convert into float?</a> 
+                        <a href="#str20">Convert into character?</a> 
+                        <a href="#str21">Count the number of characters, words, spaces and lines.</a> 
+                        <a href="#str22">Print all the possiblities of a string i.e. "abcde".</a> 
+                        <a href="#str23">Sort the string in ascending order.</a> 
+                        <a href="#str24">Enter a sentence from user and then enter the word and count the occurence of that word in the sentence.</a> 
+                        <a href="#str25">Enter a sentence from user and then enter the word and replace that word by another word.</a> 
+                        <a href="#str26">Trim the spaces from both ends (if any)</a> 
+                        <a href="#str27">Create a split function which splits the first word and return. Split(string,index)</a> 
+                        <a href="#str28">Display the string with text alignment option (1 for left, 2 for center, 3 right)</a> 
+                        <a href="#str29">Create a dictionary having 10 words and their meaning with following operations. [create, delete,search]</a> 
+                        <a href="#str30">Convert characters into string. [for example take 10 characters]</a> 
+                    </div>
+                </div></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn"><a href="#stacks">Stacks</a></button>
+                    <div class="dropdown-content">
+                        <a href="#stk1">Implement the operations of stack in an integer array (push, pop, peek, isempty, isfull) </a> 
+                        <a href="#stk2">Implement the operations of stack in an string array (push, pop, peek, isempty, isfull) </a> 
+                        <a href="#stk3">Reverse of string using stack </a> 
+                        <a href="#stk4">Single bracket matching using stack </a> 
+                        <a href="#stk5">Convert the expression into infix to prefix </a> 
+                        <a href="#stk6">Convert the expression into infix to postfix </a> 
+                        <a href="#stk7">Evaluate the prefix expression </a> 
+                        <a href="#stk8">Evaluate the postfix expression </a> 
+                        <a href="#stk9">Implement the tower of hanoi </a> 
+                        <a href="#stk10">Application of recursion using stack </a> 
+                        <a href="#stk11">Implement two stacks in an Array </a> 
+                        <a href="#stk12">Implement the operations of stack dynamically of integers (push, pop, peek, isempty, isfull) </a> 
+                        <a href="#stk13">Implement the operations of stack dynamically of string (push, pop, peek, isempty, isfull) </a> 
+                        <a href="#stk14">Sort the stack using recursion </a> </div>
+                </div></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn"><a href="#queues">Queues</a></button>
+                    <div class="dropdown-content">
+                        <a href="#que1">Implement the operations of simple queue in an integer array (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que2">Implement the operations of simple queue in an string array (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que3">Implement the operations of queue dynamically of integers (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que4">Implement the operations of queue dynamically of string (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que5">Implement the operations of circular queue in an integer array (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que6">Implement the operations of circular queue in an string array (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que7">Implement the operations of priority queue in an integer array (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que8">Implement the operations of priority queue in an string array (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que9">Implement the operations of double ended queue in an integer array (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que10">Implement the operations of double ended queue in an string array (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que11">Implement the operations of priority queue dynamically of integers (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que12">Implement the operations of priority queue dynamically of string (insert, delete, peek, isempty, isfull) </a> 
+                        <a href="#que13">Find a tour that visits all stations </a> 
+                        <a href="#que14">Longest Valid String </a> 
+                        <a href="#que15">Next larger Element </a> 
+                        <a href="#que16">Next smaller element </a> 
+                        <a href="#que17">Queue based approach for first non repeating character in a stream </a> 
+                        <a href="#que18">Reverse first k elements of queue </a> 
+                        <a href="#que19">Queue Reversal </a> 
+                        <a href="#que20">Rotten-oranges </a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn"><a href="#ll">Linked list</a></button>
+                    <div class="dropdown-content" >
+                        <a href="#">que1</a>
+                        <a href="#">que2</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn">Graphs</button>
+                    <div class="dropdown-content" >
+                        <a href="#">que1</a>
+                        <a href="#">que2</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown" >
+                    <button class="dropbtn">Trees</button>
+                    <div class="dropdown-content" style="right: 0;">
+                        <a href="#">que1skdfkjsdbfkjsbfkjsbfbskfjk</a>
+                        <a href="#">que2</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn"><a href="#ss">Searching and sorting</a></button>
+                    <div class="dropdown-content" style="right: 0;">
+                        <a href="#ss1">Linear Search through iteration</a> 
+                        <a href="#ss2">Linear Search through recursion</a> 
+                        <a href="#ss3">Binary Search through iteration</a> 
+                        <a href="#ss4">Binary Search through recursion</a> 
+                        <a href="#ss5">Selection Sorting through iteration</a> 
+                        <a href="#ss6">Bubble Sorting through iteration</a> 
+                        <a href="#ss7">Insertion Sorting through Iteration</a> 
+                        <a href="#ss8">Merge Sort through Iteration</a> 
+                        <a href="#ss9">Merge Sort through recursion</a> 
+                        <a href="#ss10">Quick Sort through Iteration</a> 
+                        <a href="#ss11">Quick Sort through recursion</a> 
+                        <a href="#ss12">Show all the complexities of the searching algorithms with exact time taken</a> 
+                        <a href="#ss13">Show all the complexities of the sorting algorithms with exact time taken</a> 
+                        <a href="#ss14">SORT THE STRING USING QUICK SORT</a> 
+                        <a href="#ss15">SORT THE STRING USING MERGE SORT</a> 
+                    </div>
+                </div></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="front">
+        <div class="bio">
+            <h1 id="dsa">Data structure</h1> -->
+            <!-- <p>Name : Nitin</p> -->
+           <!-- <p>Class : BCA 3rd year</p>  -->
+            <!-- <p>Roll No.: 4242/22</p> -->
+            <!-- <p>Submitted to : Chetan Kumar</p> -->
+            <!-- <button class="login">log in</button> -->
+            <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/icons8-up-arrow-26.png" alt=""></button>
+            <script>
+                // Get the button
+                let mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                } -->
+                
+                <!-- // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script> -->
+        <!-- </div> -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- </div>
+    <main>
+        <div class="nav2">
+            <div class="logo2">
+                <p id="arrays">Arrays</p>
+            </div>
+            <p id="qcount">Questions=20</p>
+        </div>
+        <div class="ques">
+            
+            <div id="arr1">
+                <pre>
+                <p>Questions1. Write a SQL statement that displays all the information about all salespeople.</p>
+                <code>
+                    -------------+------------+----------+------------
+                        5001 | James Hoog | New York |       0.15
+                        5002 | Nail Knite | Paris    |       0.13
+                        5005 | Pit Alex   | London   |       0.11
+                        5006 | Mc Lyon    | Paris    |       0.14
+                        5007 | Paul Adam  | Rome     |       0.13
+                        5003 | Lauson Hen | San Jose |       0.12
+
+                        SELECT *FROM salesman;
+
+
+                 </code>
+                
+                <p>Output</p>
+                <code>
+                    
+
+                salesman_id 	name		city		commission
+                    5001		James Hoog	New York	0.15
+                    5002		Nail Knite	Paris		0.13
+                    5005		Pit Alex	London		0.11
+                    5006		Mc Lyon		Paris		0.14
+                    5007		Paul Adam	Rome		0.13
+                    5003		Lauson Hen	San Jose	0.12
+                    
+                </code>
+                </pre>
+            </div>
+            <div class="borderline"></div>
+            
+            <div id="arr2">
+                <pre>
+                <p>Quesion 2.Write a SQL statement that selects all the customer from mexico?
+                    | CustomerID | CustomerName | Country    |
+                    |------------|--------------|------------|
+                    | 1          | John Smith   | USA        |
+                    | 2          | Maria Garcia | Mexico     |
+                    | 3          | Ahmed Khan   | India      |
+                    | 4          | Emma Johnson | Mexico     |
+                    | 5          | Liu Wei      | China      |
+                    
+                              
+
+                </p>
+                    <code>
+                        SELECT * FROM Customers
+                        WHERE Country = 'Mexico';
+
+                        | CustomerID | CustomerName | Country |
+                        |------------|--------------|---------|
+                        | 2          | Maria Garcia | Mexico  |
+                        | 4          | Emma Johnson | Mexico  |
+                    </code>
+                    
+                </pre>
+            </div>
+            <div class="borderline"></div>
+            <div id="arr3">
+                <pre>
+                <p>Quesion No. -3 example of AND OR and NOT OPERATORS?
+                    CREATE TABLE employees (
+                    id INT PRIMARY KEY AUTO_INCREMENT,
+                    first_name VARCHAR(50),
+                    last_name VARCHAR(50),
+                    salary DECIMAL(10, 2)
+                    );
+
+                    INSERT INTO employees (first_name, last_name, salary) VALUES
+                    ('John', 'Doe', 50000),
+                    ('Jane', 'Smith', 60000),
+                    ('Michael', 'Johnson', 70000),
+                    ('Emily', 'Brown', 55000);
+
+                </p>
+                <code>
+                    AND OPERATOR
+                     SELECT * FROM employees WHERE salary > 55000 AND first_name != 'Michael';| id | first_name | last_name | salary  |
+                     
+
+
+                     OR OPERATOR.
+                     SELECT * FROM employees WHERE last_name = 'Smith' OR salary > 65000;
+
+                     
+
+                    
+                     NOT OPERATORS
+                     SELECT * FROM employees WHERE last_name != 'Brown';
+                     
+
+
+
+
+                </code>
+                <p>Output-</p>
+                <code>
+                    AND OPERATOR
+                     SELECT * FROM employees WHERE salary > 55000 AND first_name != 'Michael';| id | first_name | last_name | salary  |
+                     |----|------------|-----------|---------|
+                     |  2 | Jane       | Smith     | 60000.00|
+                     |  4 | Emily      | Brown     | 55000.00|
+                     
+
+
+
+                     OR OPERATOR.
+                     SELECT * FROM employees WHERE last_name = 'Smith' OR salary > 65000;
+
+                     | id | first_name | last_name | salary  |
+                     |----|------------|-----------|---------|
+                     |  2 | Jane       | Smith     | 60000.00|
+                     |  3 | Michael    | Johnson   | 70000.00|
+
+                    
+                     NOT OPERATORS
+                     SELECT * FROM employees WHERE last_name != 'Brown';
+                     | id | first_name | last_name | salary  |
+                     |----|------------|-----------|---------|
+                     |  1 | John       | Doe       | 50000.00|
+                     |  2 | Jane       | Smith     | 60000.00|
+                     |  3 | Michael    | Johnson   | 70000.00|
+
+
+
+           
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr4">
+                <pre>
+                <p>Quesion No.4 - EXAMPLE OF ORDERBY STATEMENT?
+                    | id | first_name | last_name | salary  |
+                    |----|------------|-----------|---------|
+                    |  1 | John       | Doe       | 50000.00|
+                    |  2 | Jane       | Smith     | 60000.00|
+                    |  3 | Michael    | Johnson   | 70000.00|
+                    |  4 | Emily      | Brown     | 55000.00|
+
+                </p>
+                <code>
+                    SELECT * FROM employees ORDER BY salary DESC;
+                    SELECT * FROM employees ORDER BY salary ASC;
+
+                  
+                </code>
+                <p>Output-</p>
+                <code>
+
+                    ASCENDING ORDER
+                    | id | first_name | last_name | salary  |
+                    |----|------------|-----------|---------|
+                    |  3 | Michael    | Johnson   | 70000.00|
+                    |  2 | Jane       | Smith     | 60000.00|
+                    |  4 | Emily      | Brown     | 55000.00|
+                    |  1 | John       | Doe       | 50000.00|
+
+
+                    DESCENDING ORDER
+
+                    | id | first_name | last_name | salary  |
+                    |----|------------|-----------|---------|
+                    |  1 | John       | Doe       | 50000.00|
+                    |  4 | Emily      | Brown     | 55000.00|
+                    |  2 | Jane       | Smith     | 60000.00|
+                    |  3 | Michael    | Johnson   | 70000.00|
+
+
+
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr5">
+                <pre>
+                <p>Quesion No. -5 EXAMPLE OF INSERT INTO STATEMENT?
+                    
+                </p>
+                <code>
+                    FIRST LETS CREATE A TABLE
+                    
+                    CREATE TABLE students (
+                        id INT PRIMARY KEY AUTO_INCREMENT,
+                        name VARCHAR(50),
+                        age INT,
+                        grade VARCHAR(10)
+                    );
+
+                    let's use the INSERT INTO statement to add a new student record to the students table:
+
+
+                    INSERT INTO students (name, age, grade) 
+                    VALUES ('Alice', 18, 'A');
+
+                    the INSERT INTO statement, you can use a SELECT query to view the contents of the students table and verify that the new record has been added:
+                    
+                    SELECT * FROM students;
+
+
+                    
+ 
+
+
+
+            
+                </code>
+                <p>Output-</p>
+                <code>
+                    | id | name  | age | grade |
+                    |----|-------|-----|-------|
+                    | 1  | Alice | 18  | A     |
+
+
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr6">
+                <pre>
+                <p>Quesion No. -6 EXAMPLE OF NULL VALUE STATEMENT?</p>
+                <code>
+                    -- Create a table
+                    CREATE TABLE Employees (
+                        ID INT PRIMARY KEY,
+                        Name VARCHAR(50),
+                        Salary DECIMAL(10, 2)
+                    );
+                    
+                    -- Insert a row with a null value for Salary
+                    INSERT INTO Employees (ID, Name, Salary)
+                    VALUES (1, 'Alice', NULL);
+
+                    If you want to see the data you've inserted, you can run a SELECT query:
+
+                    SELECT * FROM Employees;
+
+
+                    
+                        
+
+                </code>
+                <p>Output-</p>
+                <code>
+                    | ID | Name  | Salary |
+                    |----|-------|--------|
+                    | 1  | Alice | NULL   |
+                    
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr7">
+                <pre>
+                <p>Quesion No. -7 example of update STATEMENT?</p>
+                <code>
+
+                    -- Update the salary of employee with ID 1
+                    UPDATE Employees
+                    SET Salary = 50000
+                    WHERE ID = 1;
+
+
+                    This UPDATE statement will change the salary of the employee with ID 1 to 50000. After executing this statement, you can check the updated data using a SELECT query:sql
+                    SELECT * FROM Employees WHERE ID = 1;
+
+                    The output of the SELECT query after the UPDATE statement will show the updated data for the employee with ID 1:
+
+            
+                </code>
+                <p>Output-</p>
+                <code>
+
+                    | ID | Name  | Salary |
+                    |----|-------|--------|
+                    | 1  | Alice | 50000  |
+                    
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr8">
+                <pre>
+                <p>Quesion No. 8 example of DELETE statement?</p>
+                <code>
+
+                    First, let's assume we have the following data in the Employees table:
+                    | ID | Name   | Salary |
+                    |----|--------|--------|
+                    | 1  | Alice  | 50000  |
+                    | 2  | Bob    | 60000  |
+                    | 3  | Charlie| 55000  |
+                    
+                    Now, let's execute a DELETE statement to remove the employee with ID 2 (Bob) from the table:
+
+                    -- Delete employee with ID 2
+                            DELETE FROM Employees
+                            WHERE ID = 2;
+
+
+                    
+                            After executing this DELETE statement, if we query the Employees table again using a SELECT statement, we'll see the updated data without Bob's record:
+
+                            SELECT * FROM Employees;
+
+                            
+                </code>
+                <p>Output-</p>
+                <code>
+                    | ID | Name    | Salary |
+                    |----|---------|--------|
+                    | 1  | Alice   | 50000  |
+                    | 3  | Charlie | 55000  |
+                    
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr9">
+                <pre>
+                <p>Quesion No. -9 example of LIMIT statement? </pre>
+                <code>
+
+
+                    Assuming we have the following data in the Employees table:
+                    | ID | Name    | Salary |
+                    |----|---------|--------|
+                    | 1  | Alice   | 50000  |
+                    | 2  | Bob     | 60000  |
+                    | 3  | Charlie | 55000  |
+                    | 4  | David   | 48000  |
+                    | 5  | Emily   | 52000  |
+                 
+                    Now, let's execute a SELECT statement with a LIMIT clause to retrieve only the first three employees (ordered by ID):    
+                    -- Select the first three employees
+
+
+                    SELECT * FROM Employees
+                    ORDER BY ID
+                    LIMIT 3;
+                    
+
+
+            
+                </code>
+                <p>Output-</p>
+                <code>
+                    | ID | Name    | Salary |
+                    |----|---------|--------|
+                    | 1  | Alice   | 50000  |
+                    | 2  | Bob     | 60000  |
+                    | 3  | Charlie | 55000  |
+                    
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr10">
+                <pre>
+                <p>Questions 10. example of MIN and MAX function</p>
+                <code>
+
+
+                    | ID | Name    | Salary |
+                    |----|---------|--------|
+                    | 1  | Alice   | 50000  |
+                    | 2  | Bob     | 60000  |
+                    | 3  | Charlie | 55000  |
+                    | 4  | David   | 48000  |
+                    | 5  | Emily   | 52000  |
+
+
+                    minimum salary using the MIN function:
+
+                    -- Find the minimum salary
+               SELECT MIN(Salary) AS MinSalary FROM Employees;
+
+               the maximum salary using the MAX function:
+
+               
+               -- Find the maximum salary
+               SELECT MAX(Salary) AS MaxSalary FROM Employees;
+               
+                </code>
+                <p>Output-</p>
+                <code> 
+                    MINIMUM SALERY
+                    | MinSalary |
+                    |-----------|
+                    | 48000     |
+                    
+
+                    MAXIMUM SALERY
+
+                    | MaxSalary |
+                    |-----------|
+                    | 60000     |
+    
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr11">
+                <pre>
+                <p>Quesion No. -11  example of COUNT, AVG, SUM functions</p>
+                <code>
+
+                    Assuming we have the following data in the Employees table:
+
+                    | ID | Name    | Salary |
+                    |----|---------|--------|
+                    | 1  | Alice   | 50000  |
+                    | 2  | Bob     | 60000  |
+                    | 3  | Charlie | 55000  |
+                    | 4  | David   | 48000  |
+                    | 5  | Emily   | 52000  |
+
+                    COUNT Function:
+                    
+
+                    -- Count the number of employees
+                    SELECT COUNT(*) AS TotalEmployees FROM Employees;
+
+
+                    SUM Function:
+
+                    -- Calculate the total salary
+                    SELECT SUM(Salary) AS TotalSalary FROM Employees;
+
+                    AVG Function:
+                    
+                    -- Calculate the average salary
+                    SELECT AVG(Salary) AS AverageSalary FROM Employees;
+
+
+                </code>
+                <p>Output-</p>
+                <code>
+                    COUNT
+           
+                    | TotalEmployees |
+                    |----------------|
+                    | 5              |
+
+                    SUM
+
+                    | TotalSalary |
+                    |-------------|
+                    | 275000      |
+
+                  
+                      AVERAGE
+
+                    | AverageSalary |
+                    |---------------|
+                    | 55000         |
+
+
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr12">
+                <pre>
+                <p>Quesion No. -12 exaple of LIKE OPERATOR </p>
+                <code>
+                    Assuming we have the following data in the Employees table:
+
+                    | ID | Name       | Salary |
+                    |----|------------|--------|
+                    | 1  | Alice      | 50000  |
+                    | 2  | Bob        | 60000  |
+                    | 3  | Charlie    | 55000  |
+                    | 4  | David      | 48000  |
+                    | 5  | Emily      | 52000  |
+                    | 6  | Samantha   | 58000  |
+                    | 7  | Michael    | 56000  |
+                    | 8  | Stephanie  | 51000  |
+
+                    let's use the LIKE statement to search for employees whose names contain the substring "ha":
+
+                    -- Search for employees whose names contain the substring "ha"
+
+
+                            SELECT * FROM Employees
+                            WHERE Name LIKE '%ha%';
+
+
+ 
+            
+                </code>
+                <p>Output-</p>
+                <code>
+                
+                    | ID | Name       | Salary |
+                    |----|------------|--------|
+                    | 1  | Alice      | 50000  |
+                    | 6  | Samantha   | 58000  |
+                    | 8  | Stephanie  | 51000  |
+                    
+
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr13">
+                <pre>
+                <p>Quesion No. -13  exampple of WILDCARDS</p>
+                <code>
+
+                    Assuming we have the following data in the Employees table:
+
+                    | ID | Name       | Salary |
+                    |----|------------|--------|
+                    | 1  | Alice      | 50000  |
+                    | 2  | Bob        | 60000  |
+                    | 3  | Charlie    | 55000  |
+                    | 4  | David      | 48000  |
+                    | 5  | Emily      | 52000  |
+                    | 6  | Samantha   | 58000  |
+                    | 7  | Michael    | 56000  |
+                    | 8  | Stephanie  | 51000  |
+                    
+                    
+                    1.   Using % wildcard:
+                          Let's use the % wildcard to find employees whose names end with "y".
+                         -- Search for employees whose names end with "y"
+                        SELECT * FROM Employees
+                        WHERE Name LIKE '%y';
+                    2.    Using _ wildcard:
+                        Now, let's use the _ wildcard to find employees whose names have exactly six characters.
+                        
+                        -- Search for employees whose names have exactly six characters
+                        SELECT * FROM Employees
+                        WHERE Name LIKE '______';
+
+               
+                </code>
+                <p>Output-</p>
+                <code>
+             1.| ID | Name     | Salary |
+               |----|----------|--------|
+               | 2  | Bob      | 60000  | 
+               | 5  | Emily    | 52000  |
+               | 6  | Samantha | 58000  |
+               | 7  | Michael  | 56000  |
+
+             2. | ID | Name    | Salary |
+                |----|---------|--------|
+                | 1  | Alice   | 50000  |
+                | 2  | Bob     | 60000  |
+                | 4  | David   | 48000  |
+             
+                
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr14">
+                <pre>
+                <p>Quesion No. -14  example of IN statement</p>
+                <code>
+                    | ID | Name       | Salary |
+                    |----|------------|--------|
+                    | 1  | Alice      | 50000  |
+                    | 2  | Bob        | 60000  |
+                    | 3  | Charlie    | 55000  |
+                    | 4  | David      | 48000  |
+                    | 5  | Emily      | 52000  |
+                    | 6  | Samantha   | 58000  |
+                    | 7  | Michael    | 56000  |
+                    | 8  | Stephanie  | 51000  |
+
+
+                    Let's say we want to find employees whose salaries are either 50000 or 60000. We can use the IN statement for this purpose:
+                    
+                    -- Search for employees with salaries 50000 or 60000
+                        SELECT * FROM Employees
+                        WHERE Salary IN (50000, 60000);
+
+
+
+            
+                </code>
+                <p>Output-</p>
+                <code>
+                    | ID | Name    | Salary |
+                    |----|---------|--------|
+                    | 1  | Alice   | 50000  |
+                    | 2  | Bob     | 60000  |
+                    | 5  | Emily   | 52000  |
+
+
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr15">
+                <pre>
+                <p>Quesion No. -15 example of between operator </p>
+                <code>
+                    Assuming we have the following data in the Employees table:
+
+                    | ID | Name       | Salary |
+                    |----|------------|--------|
+                    | 1  | Alice      | 50000  |
+                    | 2  | Bob        | 60000  |
+                    | 3  | Charlie    | 55000  |
+                    | 4  | David      | 48000  |
+                    | 5  | Emily      | 52000  |
+                    | 6  | Samantha   | 58000  |
+                    | 7  | Michael    | 56000  |
+                    | 8  | Stephanie  | 51000  |
+               
+
+                    Let's say we want to find employees whose salaries are between 50000 and 55000, inclusive. We can use the BETWEEN operator for this purpose:
+
+
+                    -- Search for employees with salaries between 50000 and 55000
+                    SELECT * FROM Employees
+                    WHERE Salary BETWEEN 50000 AND 55000;
+                    
+           
+                </code>
+                <p>Output-</p>
+                <code>
+                    | ID | Name       | Salary |
+                    |----|------------|--------|
+                    | 1  | Alice      | 50000  |
+                    | 3  | Charlie    | 55000  |
+                    | 5  | Emily      | 52000  |
+                    | 8  | Stephanie  | 51000  |
+
+
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr16">
+                <pre>
+                <p>Quesion No. -16  example of ALIASES. </p>
+                <code>
+                    
+                    Assuming we have the following data in the Employees table:
+                    | ID | Name       | Salary |
+                    |----|------------|--------|
+                    | 1  | Alice      | 50000  |
+                    | 2  | Bob        | 60000  |
+                    | 3  | Charlie    | 55000  |
+                    | 4  | David      | 48000  |
+                    | 5  | Emily      | 52000  |
+                    | 6  | Samantha   | 58000  |
+                    | 7  | Michael    | 56000  |
+                    | 8  | Stephanie  | 51000  | 
+
+
+                    Example 1: Table Alias  
+                    
+                    We'll use an alias E for the Employees table:
+
+                    -- Select all columns from Employees table with alias E
+                    SELECT E.ID, E.Name, E.Salary
+                    FROM Employees AS E;
+
+
+                    Example 2: Column Alias
+
+
+                    We'll use aliases for columns to make the output more readable: 
+                    -- Select ID as EmployeeID and Salary as MonthlySalary
+                    SELECT ID AS EmployeeID, Salary AS MonthlySalary
+                    FROM Employees;
+
+                
+                </code>
+                <p>Output-</p>
+                <code>
+                    | EmployeeID | MonthlySalary |
+                    |------------|---------------|
+                    | 1          | 50000         |
+                    | 2          | 60000         |
+                    | 3          | 55000         |
+                    | 4          | 48000         |
+                    | 5          | 52000         |
+                    | 6          | 58000         |
+                    | 7          | 56000         |
+                    | 8          | 51000         |
+                    
+
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr17">
+                <pre>
+                <p>Quesion No. -17 example of JOINS.</p>
+                <code>
+                    EMPLOYEE TABLE
+                    | ID | Name       | DepartmentID |
+                    |----|------------|--------------|
+                    | 1  | Alice      | 1            |
+                    | 2  | Bob        | 2            |
+                    | 3  | Charlie    | 1            |
+                    | 4  | David      | 3            |
+                    | 5  | Emily      | 2            |
+
+
+                    DEPARTMENTS TABLE
+
+                    | DepartmentID | DepartmentName |
+                    |--------------|----------------|
+                    | 1            | Sales          |
+                    | 2            | Marketing      |
+                    | 3            | HR             |
+
+                 1. INNER JOINS
+                    An inner join returns rows that have matching values in both tables.
+                    SELECT E.ID, E.Name, D.DepartmentName
+                    FROM Employees AS E
+                    INNER JOIN Departments AS D
+                    ON E.DepartmentID = D.DepartmentID;
+
+
+                 2. Left Join:
+                  A left join returns all rows from the left table (Employees) and the matched rows from the right table (Departments). If there's no match, NULL values are returned for the right table columns.                                                  
+
+    
+                        SELECT E.ID, E.Name, D.DepartmentName
+                        FROM Employees AS E
+                        LEFT JOIN Departments AS D
+                        ON E.DepartmentID = D.DepartmentID;
+                 3. RIGHT JOIN:
+                    A right join returns all rows from the right table (Departments) and the matched rows from the left table (Employees). If there's no match, NULL values are returned for the left table columns.
+                  
+                    SELECT E.ID, E.Name, D.DepartmentName
+                    FROM Employees AS E
+                    RIGHT JOIN Departments AS D
+                    ON E.DepartmentID = D.DepartmentID;
+                 
+                </code>
+                <p>Output-</p>
+                <code>
+                 
+                    
+                 1. INNER JOIN   
+                    | ID | Name    | DepartmentName |
+                    |----|---------|----------------|
+                    | 1  | Alice   | Sales          |
+                    | 2  | Bob     | Marketing      |
+                    | 3  | Charlie | Sales          |
+                    | 4  | David   | HR             |
+                    | 5  | Emily   | Marketing      |
+
+                  2. LEFT JOIN  
+
+                    | ID | Name    | DepartmentName |
+                    |----|---------|----------------|
+                    | 1  | Alice   | Sales          |
+                    | 2  | Bob     | Marketing      |
+                    | 3  | Charlie | Sales          |
+                    | 4  | David   | HR             |
+                    | 5  | Emily   | Marketing      |
+
+
+                 3. RIGHT JOIN
+
+                    | ID   | Name    | DepartmentName |
+                    |------|---------|----------------|
+                    | 1    | Alice   | Sales          |
+                    | 2    | Bob     | Marketing      |
+                    | 3    | Charlie | Sales          |
+                    | 4    | David   | HR             |
+                    | 5    | Emily   | Marketing      |
+                    | NULL | NULL    | Finance        |
+                    
+                                
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr18">
+                <pre>
+                <p>Quesion No. -18 example of grant command? </p>
+                <code>
+                    Let's say we have a table named employees in a database and we want to grant the SELECT privilege on this table to a user named employee_user. Here's how you would do it in SQL, along with the output of the command:
+                    First, let's create the employees table:
+
+
+                    CREATE TABLE employees (
+                    employee_id INT PRIMARY KEY,
+                    first_name VARCHAR(50),
+                    last_name VARCHAR(50),
+                    department VARCHAR(50)
+                );
+
+                Next, we'll grant the SELECT privilege on the employees table to the user employee_user:
+                GRANT SELECT ON employees TO employee_user;
+                After running this command, the employee_user will have the SELECT privilege on the employees table.
+
+                To verify that the privilege has been granted successfully, we can use the SHOW GRANTS command to see the privileges granted to the employee_user:    
+
+                SHOW GRANTS FOR employee_user;
+
+            
+                </code>
+                <p>Output-</p>
+                <code>
+                    GRANT SELECT ON `database_name`.`employees` TO 'employee_user'@'%'
+                    This output confirms that the employee_user has been granted the SELECT privilege on the employees table in the specified database (database_name).
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr19">
+                <pre>
+                <p>Quesion No. -19 example of revoke command </p>
+
+                <code>
+                    Certainly! Let's use the REVOKE command to revoke previously granted privileges on a table. I'll also provide the output of the REVOKE command.
+                    First, let's create a simple table called products:
+                    CREATE TABLE products (
+                        product_id INT PRIMARY KEY,
+                        product_name VARCHAR(50),
+                        price DECIMAL(10, 2)
+                    );
+                    This CREATE TABLE statement creates a table named products with columns for product_id, product_name, and price.
+
+                    Now, let's grant some privileges on this table to a user named product_user. We'll grant SELECT and INSERT privileges:
+                    GRANT SELECT, INSERT ON products TO product_user;
+                    
+
+    
+            
+                </code>
+                <p>Output-</p>
+                <code>
+
+                    The output of this REVOKE command might look similar to the GRANT command's output:
+                    Query OK, 0 rows affected (0.05 sec)
+                    This output confirms that the REVOKE command executed successfully without errors (Query OK), didn't modify any existing rows (0 rows affected since it's a privilege revoke), and took a certain amount of time to execute (0.05 sec in this example).
+
+                    After executing the REVOKE command, you can verify the remaining privileges granted to the product_user using the SHOW GRANTS command:
+                    SHOW GRANTS FOR product_user;
+                    The output of this command will show the remaining privileges granted to product_user on the products table, confirming that only the SELECT privilege remains.                   
+
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="arr20">
+                <pre>
+                <p>Quesion No. -19 example of rollback and commit </p>
+                <code>
+                    First, let's create the inventory table with some initial data:
+
+                    sql
+                    CREATE TABLE inventory (
+                        product_id INT PRIMARY KEY,
+                        product_name VARCHAR(50),
+                        quantity INT
+                    );
+                    
+                    INSERT INTO inventory (product_id, product_name, quantity)
+                    VALUES
+                        (1, 'Product A', 100),
+                        (2, 'Product B', 150),
+                        (3, 'Product C', 200);
+                        Now, let's start a transaction and make some changes to the inventory table:                                        
+                        START TRANSACTION;
+
+                        -- Decrease the quantity of Product A
+                        UPDATE inventory SET quantity = quantity - 10 WHERE product_id = 1;
+                        
+                        -- Increase the quantity of Product B
+                        UPDATE inventory SET quantity = quantity + 20 WHERE product_id = 2;
+                        At this point, we haven't committed the changes yet. If we check the inventory table:
+                        SELECT * FROM inventory;
+                        The output would show the modified quantities for Product A and Product B within the transaction.
+
+                        Now, let's say we want to commit these changes to make them permanent:                        
+                        COMMIT;
+                        The output of the COMMIT command will depend on your SQL environment but typically confirms that the transaction was committed successfully.
+
+                        If, however, we decide to roll back the changes instead of committing them:                        
+                        ROLLBACK;
+                        The output of the ROLLBACK command will indicate that the transaction was rolled back, undoing the changes made within the transaction.
+
+                        After committing or rolling back, if we query the inventory table again:
+                        
+
+
+
+
+
+
+                </code>
+                <p>Output-</p>
+                <code>
+                    SELECT * FROM inventory;
+
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div class="nav2">
+                <div class="logo2">
+                    <p id="arr21"></p> Arrays</p>
+                </div>
+                <p id="qcount">Questions=06</p>
+            </div>
+            <div id="2Darr1">
+                <pre>
+                <p>Quesion No. -1 example of groupby command  </p>
+                <code>
+
+    
+                    Let's create and populate the orders table with some sample data:
+                    CREATE TABLE orders (
+                        order_id INT PRIMARY KEY,
+                        customer_id INT,
+                        order_date DATE,
+                        total_amount DECIMAL(10, 2)
+                    );
+                    
+                    INSERT INTO orders (order_id, customer_id, order_date, total_amount)
+                    VALUES
+                        (1, 101, '2023-01-05', 150.50),
+                        (2, 102, '2023-01-06', 75.25),
+                        (3, 101, '2023-01-07', 120.00),
+                        (4, 103, '2023-01-08', 200.00),
+                        (5, 102, '2023-01-10', 90.75),
+                        (6, 103, '2023-01-12', 180.50);
+                        SELECT customer_id, SUM(total_amount) AS total_order_amount
+                        FROM orders
+                        GROUP BY customer_id;
+
+                </code>
+                <p>Output-</p>
+                <code>
+                    customer_id | total_order_amount
+                    --------------------------------
+                    101         | 270.50
+                    102         | 166.00
+                    103         | 380.50
+                    
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="2Darr2">
+                <pre>
+                <p>Quesion No. -2 date function </p>
+                <code>
+                    CREATE TABLE transactions (
+                        transaction_id INT PRIMARY KEY,
+                        transaction_timestamp DATETIME
+                    );
+                    
+                    INSERT INTO transactions (transaction_id, transaction_timestamp)
+                    VALUES
+                        (1, '2023-04-10 08:30:00'),
+                        (2, '2023-04-10 10:45:00'),
+                        (3, '2023-04-11 12:15:00'),
+                        (4, '2023-04-12 09:00:00'),
+                        (5, '2023-04-12 11:30:00');
+
+
+                        SELECT transaction_id, DATE(transaction_timestamp) AS transaction_date
+                        FROM transactions;
+
+                        The output of this query will show the transaction ID along with the corresponding date extracted from the timestamp:
+
+                                                
+                                            
+                </code>
+                <p>Output-</p>
+                <code>
+
+                    transaction_id | transaction_date
+                    --------------------------------
+                    1              | 2023-04-10
+                    2              | 2023-04-10
+                    3              | 2023-04-11
+                    4              | 2023-04-12
+                    5              | 2023-04-12
+                                 
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="2Darr3">
+                <pre>
+                <p>Quesion No. -3 example ofcharacter function</p>
+                <code>
+                1. UPPER() and LOWER(): These functions convert a string to uppercase or lowercase, respectively.
+                SELECT UPPER('hello') AS uppercase_result, LOWER('WORLD') AS lowercase_result;
+
+                2.SUBSTRING() or SUBSTR(): This function extracts a substring from a string.
+                SELECT SUBSTRING('Hello World', 7, 5) AS extracted_substring;
+
+                3.CONCAT(): This function concatenates two or more strings.
+                SELECT CONCAT('Hello', ' ', 'World') AS concatenated_string;
+
+
+                4.LENGTH() or LEN(): These functions return the length of a string.
+                SELECT LENGTH('Hello') AS string_length;
+
+
+                5.TRIM(): This function removes leading and trailing whitespace characters from a string.
+                SELECT TRIM('  Hello  ') AS trimmed_string;
+
+
+                6.REPLACE(): This function replaces occurrences of a substring within a string with another substring.
+                SELECT REPLACE('Hello World', 'World', 'Universe') AS replaced_string;
+
+                </code>
+                <p>Output-</p>
+                <code>
+                1.     uppercase_result | lowercase_result
+                        ----------------|-----------------
+                        HELLO           | world
+
+
+                2.      extracted_substring
+                        -------------------
+                        World
+
+                        
+                3.        string_length
+                        -------------
+                        5
+
+                4.       trimmed_string
+                        -------------
+                        Hello
+
+                        
+                5.       replaced_string
+                        ----------------
+                        Hello Universe
+
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="2Darr4">
+                <pre>
+                <p>Quesion No. -4 example of pl/sql control statements </p>
+                <code>
+
+
+                IF 
+
+                                        DECLARE  
+                    a number(3) := 500;  
+                    BEGIN  
+                    -- check the boolean condition using if statement   
+                    IF( a < 20 ) THEN  
+                        -- if condition is true then print the following    
+                        dbms_output.put_line('a is less than 20 ' );  
+                    ELSE  
+                        dbms_output.put_line('a is not less than 20 ' );  
+                    END IF;  
+                    dbms_output.put_line('value of a is : ' || a);  
+                    END; 
+
+                CASE 
+                                    DECLARE  
+                    grade char(1) := 'A';  
+                    BEGIN  
+                    CASE grade  
+                        when 'A' then dbms_output.put_line('Excellent');  
+                        when 'B' then dbms_output.put_line('Very good');  
+                        when 'C' then dbms_output.put_line('Good');  
+                        when 'D' then dbms_output.put_line('Average');  
+                        when 'F' then dbms_output.put_line('Passed with Grace');  
+                        else dbms_output.put_line('Failed');  
+                    END CASE;  
+                    END;  
+
+                EXIT loop
+
+                DECLARE  
+                i NUMBER := 1;  
+                BEGIN  
+                LOOP  
+                EXIT WHEN i>10;  
+                DBMS_OUTPUT.PUT_LINE(i);  
+                i := i+1;  
+                END LOOP;  
+                END;  
+
+
+                WHILE loop
+                DECLARE  
+                i INTEGER := 1;  
+                BEGIN  
+                WHILE i <= 10 LOOP  
+                DBMS_OUTPUT.PUT_LINE(i);  
+                i := i+1;  
+                END LOOP;  
+                END;                  
+
+
+                FOR loop
+                BEGIN  
+                FOR k IN 1..10 LOOP  
+                -- note that k was not declared  
+                DBMS_OUTPUT.PUT_LINE(k);  
+                END LOOP;  
+                END;   
+
+                CONTINUE
+
+                BEGIN  
+                FOR k IN 1..10 LOOP  
+                -- note that k was not declared  
+                DBMS_OUTPUT.PUT_LINE(k);  
+                END LOOP;  
+                END;   
+                
+                
+                GOTO
+
+                DECLARE  
+                a number(2) := 30;  
+             BEGIN  
+                <<loopstart>>  
+                -- while loop execution   
+                WHILE a < 50 LOOP  
+                   dbms_output.put_line ('value of a: ' || a);  
+                   a := a + 1;  
+                   IF a = 35 THEN  
+                      a := a + 1;  
+                      GOTO loopstart;  
+                   END IF;  
+                END LOOP;  
+             END;  
+             /  
+             After the execution o
+
+
+                </code>
+                <p>Output-</p>
+                <code>
+
+                    IF
+
+                    a is not less than 20
+                    value of a is : 500   
+                    
+                    case
+
+                    Excellent
+
+
+
+                    EXIT
+                            1
+                            2
+                            3
+                            4
+                            5
+                            6
+                            7
+                            8
+                            9
+                            10            
+                        
+                     WHILE   
+                            1
+                            2
+                            3
+                            4
+                            5
+                            6
+                            7
+                            8
+                            9
+                            10                        
+                        
+                        FOR
+
+                            1
+                            2
+                            3
+                            4
+                            5
+                            6
+                            7
+                            8
+                            9
+                            10
+                        
+                            CONTINUE
+                              
+                            Inside loop:  x = 0
+                            Inside loop:  x = 1
+                            Inside loop:  x = 2
+                            Inside loop, after CONTINUE:  x = 3
+                            Inside loop:  x = 3
+                            Inside loop, after CONTINUE:  x = 4
+                            Inside loop:  x = 4
+                            Inside loop, after CONTINUE:  x = 5
+                            After loop:  x = 5
+                             
+                            GOTO
+
+                            value of a: 30
+                            value of a: 31
+                            value of a: 32
+                            value of a: 33
+                            value of a: 34
+                            value of a: 36
+                            value of a: 37
+                            value of a: 38
+                            value of a: 39
+                            value of a: 40
+                            value of a: 41
+                            value of a: 42
+                            value of a: 43
+                            value of a: 44
+                            value of a: 45
+                            value of a: 46
+                            value of a: 47
+                            value of a: 48
+                            value of a: 49                            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="2Darr5">
+                <pre>
+                <p>Quesion No. -5 example of procedure</p>
+                <code>
+
+                    create table user(id number(10) primary key,name varchar2(100)); 
+
+
+                   Now write the procedure code to insert record in user table.
+
+                   create or replace procedure "INSERTUSER"    
+                   (id IN NUMBER,    
+                   name IN VARCHAR2)    
+                   is    
+                   begin    
+                   insert into user values(id,name);    
+                   end;    
+                   /       
+                </code>
+                <p>Output-</p>
+                <code>
+                    Procedure created. 
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="2Darr6">
+                <pre>
+                <p>Quesion No. -6 example of function in pl/sql</p>
+                <code>
+                     
+                        create or replace function adder(n1 in number, n2 in number)    
+                        return number    
+                        is     
+                        n3 number(8);    
+                        begin    
+                        n3 :=n1+n2;    
+                        return n3;    
+                        end;    
+                        / 
+                        
+                        Now write another program to call the function.
+
+                        DECLARE    
+                        n3 number(2);    
+                        BEGIN    
+                        n3 := adder(11,22);    
+                        dbms_output.put_line('Addition is: ' || n3);    
+                        END;    
+                        /    
+
+                            
+                </code>
+                <p>Output-</p>
+                <code>
+                    Addition is: 33
+
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div id="2Darr7">
+                <pre>
+                <p>Quesion No. -7 example of cursor in pl/sql</p>
+                <code>
+                    DECLARE   
+                    total_rows number(2);  
+                 BEGIN  
+                    UPDATE  customers  
+                    SET salary = salary + 5000;  
+                    IF sql%notfound THEN  
+                       dbms_output.put_line('no customers updated');  
+                    ELSIF sql%found THEN  
+                       total_rows := sql%rowcount;  
+                       dbms_output.put_line( total_rows || ' customers updated ');  
+                    END IF;   
+                 END;  
+                 /  
+                </code>
+                <p>Output-</p>
+                <code>
+                    6 customers updated
+                    PL/SQL procedure successfully completed.
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            <div class="nav2">
+                <div class="logo2">
+                    <p id="strings">Strings</p>
+                </div>
+                <p id="qcount">Questions=30</p>
+            </div>
+            <div id="str1">
+                <pre>
+                <p>Quesion No. - 1 example of exception in ol/sql
+                </p>
+                <code>
+
+                    DECLARE  
+                    c_id customers.id%type := 8;  
+                    c_name  customers.name%type;  
+                    c_addr customers.address%type;  
+                 BEGIN  
+                    SELECT  name, address INTO  c_name, c_addr  
+                    FROM customers  
+                    WHERE id = c_id;  
+                 DBMS_OUTPUT.PUT_LINE ('Name: '||  c_name);  
+                  DBMS_OUTPUT.PUT_LINE ('Address: ' || c_addr);  
+                 EXCEPTION  
+                    WHEN no_data_found THEN  
+                       dbms_output.put_line('No such customer!');  
+                    WHEN others THEN  
+                       dbms_output.put_line('Error!');  
+                 END;  
+                 /                       
+            
+                </code>
+                <p>Output-</p>
+                <code>
+
+            No such customer!
+            PL/SQL procedure successfully completed.
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str2">
+                <pre>
+                <p>Quesion No. - 2 example of triggers in pl/sql
+                </p>
+                <code>
+                    CREATION OF TRIGGER
+                    CREATE OR REPLACE TRIGGER display_salary_changes  
+                    BEFORE DELETE OR INSERT OR UPDATE ON customers  
+                    FOR EACH ROW  
+                    WHEN (NEW.ID > 0)  
+                    DECLARE  
+                       sal_diff number;  
+                    BEGIN  
+                       sal_diff := :NEW.salary  - :OLD.salary;  
+                       dbms_output.put_line('Old salary: ' || :OLD.salary);  
+                       dbms_output.put_line('New salary: ' || :NEW.salary);  
+                       dbms_output.put_line('Salary difference: ' || sal_diff);  
+                    END;  
+                    /  
+  
+
+                    Use the following code to get the old salary, new salary and salary difference after the trigger created.
+                                            DECLARE   
+                        total_rows number(2);  
+                        BEGIN  
+                        UPDATE  customers  
+                        SET salary = salary + 5000;  
+                        IF sql%notfound THEN  
+                            dbms_output.put_line('no customers updated');  
+                        ELSIF sql%found THEN  
+                            total_rows := sql%rowcount;  
+                            dbms_output.put_line( total_rows || ' customers updated ');  
+                        END IF;   
+                        END;  
+                        /  
+
+                </code>
+                <p>Output-</p>
+                <code>
+                    Trigger created.
+
+
+
+                    Old salary: 20000
+                    New salary: 25000
+                    Salary difference: 5000
+                    Old salary: 22000
+                    New salary: 27000
+                    Salary difference: 5000
+                    Old salary: 24000
+                    New salary: 29000
+                    Salary difference: 5000
+                    Old salary: 26000
+                    New salary: 31000
+                    Salary difference: 5000
+                    Old salary: 28000
+                    New salary: 33000
+                    Salary difference: 5000
+                    Old salary: 30000
+                    New salary: 35000
+                    Salary difference: 5000
+                    6 customers updated
+            
+                </code>
+                </pre> -->
+               <!-- <div class="borderline"></div>
+            </div> 
+            <div id="str3">
+                <pre>
+                <p>Quesion No. - 3 Convert into sentence case ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str4">
+                <pre>
+                <p>Quesion No. - 4 Convert into title case ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str5">
+                <pre>
+                <p>Quesion No. - 5 Convert into toggle case ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str6">
+                <pre>
+                <p>Quesion No. - 6 Final length of the string ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str7">
+                <pre>
+                <p>Quesion No. - 7 Compare those string ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str8">
+                <pre>
+                <p>Quesion No. - 8 Concatenate the string ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str9">
+                <pre>
+                <p>Quesion No. - 9 Copy that string into another string ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str10">
+                <pre>
+                <p>Quesion No. - 10 Enter bound number and print character on that bound ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str11">
+                <pre>
+                <p>Quesion No. - 11 Check its palindrome or not?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str12">
+                <pre>
+                <p>Quesion No. - 12 Print each character in new line ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str13">
+                <pre>
+                <p>Quesion No. - 13 Copy reverse order into another string ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str14">
+                <pre>
+                <p>Quesion No. - 14 2 strings and print difference each character ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str15">
+                <pre>
+                <p>Quesion No. - 15 Enter a character , it is exist or not ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str16">
+                <pre>
+                <p>Quesion No. - 16 Enter a character if it is exist then print the bound number ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str17">
+                <pre>
+                <p>Quesion No. - 17 Count all vowels ?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str18">
+                <pre>
+                <p>Quesion No. - 18 Convert into integer?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str19">
+                <pre>
+                <p>Quesion No. - 19 Convert into float?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str20">
+                <pre>
+                <p>Quesion No. - 20 Convert into character?
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str21">
+                <pre>
+                <p>Quesion No. - 21 Count the number of characters, words, spaces and lines.
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str22">
+                <pre>
+                <p>Quesion No. - 22 Print all the possiblities of a string i.e. "abcde".
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str23">
+                <pre>
+                <p>Quesion No. - 23 Sort the string in ascending order.
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str24">
+                <pre>
+                <p>Quesion No. - 24 Enter a sentence from user and then enter the word and count the occurence of that word in the sentence.
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str25">
+                <pre>
+                <p>Quesion No. - 25 Enter a sentence from user and then enter the word and replace that word by another word.
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str26">
+                <pre>
+                <p>Quesion No. - 26 Trim the spaces from both ends (if any)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str27">
+                <pre>
+                <p>Quesion No. - 27 Create a split function which splits the first word and return. Split(string,index)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str28">
+                <pre>
+                <p>Quesion No. - 28 Display the string with text alignment option (1 for left, 2 for center, 3 right)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str29">
+                <pre>
+                <p>Quesion No. - 29 Create a dictionary having 10 words and their meaning with following operations. [create, delete,search]
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div id="str30">
+                <pre>
+                <p>Quesion No. - 30 Convert characters into string. [for example take 10 characters]
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div> 
+            <div class="nav2">
+                <div class="logo2">
+                    <p id="stacks">Stacks</p>
+                </div>
+                <p id="qcount">Questions=14</p>
+            </div>
+            <div id="stk1">
+                <pre>
+                <p>Quesion No. - 1 Implement the operations of stack in an integer array (push, pop, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk2">
+                <pre>
+                <p>Quesion No. - 2 Implement the operations of stack in an string array (push, pop, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk3">
+                <pre>
+                <p>Quesion No. - 3 Reverse of string using stack
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk4">
+                <pre>
+                <p>Quesion No. - 4 Single bracket matching using stack
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk5">
+                <pre>
+                <p>Quesion No. - 5 Convert the expression into infix to prefix
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk6">
+                <pre>
+                <p>Quesion No. - 6 Convert the expression into infix to postfix
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk7">
+                <pre>
+                <p>Quesion No. - 7 Evaluate the prefix expression
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk8">
+                <pre>
+                <p>Quesion No. - 8 Evaluate the postfix expression
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk9">
+                <pre>
+                <p>Quesion No. - 9 Implement the tower of hanoi
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk10">
+                <pre>
+                <p>Quesion No. - 10 Application of recursion using stack
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk11">
+                <pre>
+                <p>Quesion No. - 11 Implement two stacks in an Array
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk12">
+                <pre>
+                <p>Quesion No. - 12 Implement the operations of stack dynamically of integers (push, pop, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk13">
+                <pre>
+                <p>Quesion No. - 13 Implement the operations of stack dynamically of string (push, pop, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="stk14">
+                <pre>
+                <p>Quesion No. - 14 Sort the stack using recursion
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+
+            <div class="nav2">
+                <div class="logo2">
+                    <p id="queues">queues</p>
+                </div>
+                <p id="qcount">Questions=20</p>
+            </div>
+
+            <div id="que1">
+                <pre>
+                <p>Quesion No. - 1 Implement the operations of simple queue in an integer array (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que2">
+                <pre>
+                <p>Quesion No. - 2 Implement the operations of simple queue in an string array (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que3">
+                <pre>
+                <p>Quesion No. - 3 Implement the operations of queue dynamically of integers (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que4">
+                <pre>
+                <p>Quesion No. - 4 Implement the operations of queue dynamically of string (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que5">
+                <pre>
+                <p>Quesion No. - 5 Implement the operations of circular queue in an integer array (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que6">
+                <pre>
+                <p>Quesion No. - 6 Implement the operations of circular queue in an string array (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que7">
+                <pre>
+                <p>Quesion No. - 7 Implement the operations of priority queue in an integer array (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que8">
+                <pre>
+                <p>Quesion No. - 8 Implement the operations of priority queue in an string array (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que9">
+                <pre>
+                <p>Quesion No. - 9 Implement the operations of double ended queue in an integer array (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que10">
+                <pre>
+                <p>Quesion No. - 10 Implement the operations of double ended queue in an string array (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que11">
+                <pre>
+                <p>Quesion No. - 11 Implement the operations of priority queue dynamically of integers (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que12">
+                <pre>
+                <p>Quesion No. - 12 Implement the operations of priority queue dynamically of string (insert, delete, peek, isempty, isfull)
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que13">
+                <pre>
+                <p>Quesion No. - 13 Find a tour that visits all stations
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que14">
+                <pre>
+                <p>Quesion No. - 14 Longest Valid String
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que15">
+                <pre>
+                <p>Quesion No. - 15 Next larger Element
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que16">
+                <pre>
+                <p>Quesion No. - 16 Next smaller element
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que17">
+                <pre>
+                <p>Quesion No. - 17 Queue based approach for first non repeating character in a stream
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que18">
+                <pre>
+                <p>Quesion No. - 18 Reverse first k elements of queue
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que19">
+                <pre>
+                <p>Quesion No. - 19 Queue Reversal
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="que20">
+                <pre>
+                <p>Quesion No. - 20 Rotten-oranges
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+                                    
+            <div class="nav2">
+                <div class="logo2">
+                    <p id="ss">Searching And Sorting</p>
+                </div>
+                <p id="qcount">Questions=15</p>
+            </div>
+            <div id="ss1">
+                <pre>
+                <p>Quesion No. - 1 Linear Search through iteration
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss2">
+                <pre>
+                <p>Quesion No. - 2 Linear Search through recursion
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss3">
+                <pre>
+                <p>Quesion No. - 3 Binary Search through iteration
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss4">
+                <pre>
+                <p>Quesion No. - 4 Binary Search through recursion
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss5">
+                <pre>
+                <p>Quesion No. - 5 Selection Sorting through iteration
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss6">
+                <pre>
+                <p>Quesion No. - 6 Bubble Sorting through iteration
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss7">
+                <pre>
+                <p>Quesion No. - 7 Insertion Sorting through Iteration
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss8">
+                <pre>
+                <p>Quesion No. - 8 Merge Sort through Iteration
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss9">
+                <pre>
+                <p>Quesion No. - 9 Merge Sort through recursion
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss10">
+                <pre>
+                <p>Quesion No. - 10 Quick Sort through Iteration
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss11">
+                <pre>
+                <p>Quesion No. - 11 Quick Sort through recursion
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss12">
+                <pre>
+                <p>Quesion No. - 12 Show all the complexities of the searching algorithms with exact time taken
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss13">
+                <pre>
+                <p>Quesion No. - 13 Show all the complexities of the sorting algorithms with exact time taken
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss14">
+                <pre>
+                <p>Quesion No. - 14 Sort the string using quick sort
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+            
+             
+            <div id="ss15">
+                <pre>
+                <p>Quesion No. - 15 Sort the string using merge sort
+                </p>
+                <code>
+            
+                </code>
+                <p>Output-</p>
+                <code>
+            
+                </code>
+                </pre>
+                <div class="borderline"></div>
+            </div>
+     
+        </div>
+    </main>
+</body>

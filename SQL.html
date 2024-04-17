@@ -1,0 +1,1077 @@
+<!-- sql -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sql</title>
+    <link rel="stylesheet" href="/website/style.css">
+</head>
+<body>
+    <div class="ques">
+            
+        <div id="arr1">
+            <a href="#" style="display: inline-block;font-size: 30px; padding: 20px 30px; background-color: #76cc69; color: white;margin-left: 650PX; text-align: center; text-decoration: none; border-radius: 5px; border: none; 
+        font-family: 'Times New Roman', Times, serif; margin-top: 100PX;
+    ">SQL</a>
+            <pre>
+            <p>Questions1. Write a SQL statement that displays all the information about all salespeople.</p>
+            <code>
+                -------------+------------+----------+------------
+                    5001 | James Hoog | New York |       0.15
+                    5002 | Nail Knite | Paris    |       0.13
+                    5005 | Pit Alex   | London   |       0.11
+                    5006 | Mc Lyon    | Paris    |       0.14
+                    5007 | Paul Adam  | Rome     |       0.13
+                    5003 | Lauson Hen | San Jose |       0.12
+
+                    SELECT *FROM salesman;
+
+
+             </code>
+            
+            <p>Output</p>
+            <code>
+                
+
+            salesman_id 	name		city		commission
+                5001		James Hoog	New York	0.15
+                5002		Nail Knite	Paris		0.13
+                5005		Pit Alex	London		0.11
+                5006		Mc Lyon		Paris		0.14
+                5007		Paul Adam	Rome		0.13
+                5003		Lauson Hen	San Jose	0.12
+                
+            </code>
+            </pre>
+        </div>
+        <div class="borderline"></div>
+        
+        <div id="arr2">
+            <pre>
+            <p>Quesion 2.Write a SQL statement that selects all the customer from mexico?
+                | CustomerID | CustomerName | Country    |
+                |------------|--------------|------------|
+                | 1          | John Smith   | USA        |
+                | 2          | Maria Garcia | Mexico     |
+                | 3          | Ahmed Khan   | India      |
+                | 4          | Emma Johnson | Mexico     |
+                | 5          | Liu Wei      | China      |
+                
+                          
+
+            </p>
+                <code>
+                    SELECT * FROM Customers
+                    WHERE Country = 'Mexico';
+
+                    | CustomerID | CustomerName | Country |
+                    |------------|--------------|---------|
+                    | 2          | Maria Garcia | Mexico  |
+                    | 4          | Emma Johnson | Mexico  |
+                </code>
+                
+            </pre>
+        </div>
+        <div class="borderline"></div>
+        <div id="arr3">
+            <pre>
+            <p>Quesion No. -3 example of AND OR and NOT OPERATORS?
+                CREATE TABLE employees (
+                id INT PRIMARY KEY AUTO_INCREMENT,
+                first_name VARCHAR(50),
+                last_name VARCHAR(50),
+                salary DECIMAL(10, 2)
+                );
+
+                INSERT INTO employees (first_name, last_name, salary) VALUES
+                ('John', 'Doe', 50000),
+                ('Jane', 'Smith', 60000),
+                ('Michael', 'Johnson', 70000),
+                ('Emily', 'Brown', 55000);
+
+            </p>
+            <code>
+                AND OPERATOR
+                 SELECT * FROM employees WHERE salary > 55000 AND first_name != 'Michael';| id | first_name | last_name | salary  |
+                 
+
+
+                 OR OPERATOR.
+                 SELECT * FROM employees WHERE last_name = 'Smith' OR salary > 65000;
+
+                 
+
+                
+                 NOT OPERATORS
+                 SELECT * FROM employees WHERE last_name != 'Brown';
+                 
+
+
+
+
+            </code>
+            <p>Output-</p>
+            <code>
+                AND OPERATOR
+                 SELECT * FROM employees WHERE salary > 55000 AND first_name != 'Michael';| id | first_name | last_name | salary  |
+                 |----|------------|-----------|---------|
+                 |  2 | Jane       | Smith     | 60000.00|
+                 |  4 | Emily      | Brown     | 55000.00|
+                 
+
+
+
+                 OR OPERATOR.
+                 SELECT * FROM employees WHERE last_name = 'Smith' OR salary > 65000;
+
+                 | id | first_name | last_name | salary  |
+                 |----|------------|-----------|---------|
+                 |  2 | Jane       | Smith     | 60000.00|
+                 |  3 | Michael    | Johnson   | 70000.00|
+
+                
+                 NOT OPERATORS
+                 SELECT * FROM employees WHERE last_name != 'Brown';
+                 | id | first_name | last_name | salary  |
+                 |----|------------|-----------|---------|
+                 |  1 | John       | Doe       | 50000.00|
+                 |  2 | Jane       | Smith     | 60000.00|
+                 |  3 | Michael    | Johnson   | 70000.00|
+
+
+
+       
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr4">
+            <pre>
+            <p>Quesion No.4 - EXAMPLE OF ORDERBY STATEMENT?
+                | id | first_name | last_name | salary  |
+                |----|------------|-----------|---------|
+                |  1 | John       | Doe       | 50000.00|
+                |  2 | Jane       | Smith     | 60000.00|
+                |  3 | Michael    | Johnson   | 70000.00|
+                |  4 | Emily      | Brown     | 55000.00|
+
+            </p>
+            <code>
+                SELECT * FROM employees ORDER BY salary DESC;
+                SELECT * FROM employees ORDER BY salary ASC;
+
+              
+            </code>
+            <p>Output-</p>
+            <code>
+
+                ASCENDING ORDER
+                | id | first_name | last_name | salary  |
+                |----|------------|-----------|---------|
+                |  3 | Michael    | Johnson   | 70000.00|
+                |  2 | Jane       | Smith     | 60000.00|
+                |  4 | Emily      | Brown     | 55000.00|
+                |  1 | John       | Doe       | 50000.00|
+
+
+                DESCENDING ORDER
+
+                | id | first_name | last_name | salary  |
+                |----|------------|-----------|---------|
+                |  1 | John       | Doe       | 50000.00|
+                |  4 | Emily      | Brown     | 55000.00|
+                |  2 | Jane       | Smith     | 60000.00|
+                |  3 | Michael    | Johnson   | 70000.00|
+
+
+
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr5">
+            <pre>
+            <p>Quesion No. -5 EXAMPLE OF INSERT INTO STATEMENT?
+                
+            </p>
+            <code>
+                FIRST LETS CREATE A TABLE
+                
+                CREATE TABLE students (
+                    id INT PRIMARY KEY AUTO_INCREMENT,
+                    name VARCHAR(50),
+                    age INT,
+                    grade VARCHAR(10)
+                );
+
+                let's use the INSERT INTO statement to add a new student record to the students table:
+
+
+                INSERT INTO students (name, age, grade) 
+                VALUES ('Alice', 18, 'A');
+
+                the INSERT INTO statement, you can use a SELECT query to view the contents of the students table and verify that the new record has been added:
+                
+                SELECT * FROM students;
+
+
+                
+
+
+
+
+        
+            </code>
+            <p>Output-</p>
+            <code>
+                | id | name  | age | grade |
+                |----|-------|-----|-------|
+                | 1  | Alice | 18  | A     |
+
+
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr6">
+            <pre>
+            <p>Quesion No. -6 EXAMPLE OF NULL VALUE STATEMENT?</p>
+            <code>
+                -- Create a table
+                CREATE TABLE Employees (
+                    ID INT PRIMARY KEY,
+                    Name VARCHAR(50),
+                    Salary DECIMAL(10, 2)
+                );
+                
+                -- Insert a row with a null value for Salary
+                INSERT INTO Employees (ID, Name, Salary)
+                VALUES (1, 'Alice', NULL);
+
+                If you want to see the data you've inserted, you can run a SELECT query:
+
+                SELECT * FROM Employees;
+
+
+                
+                    
+
+            </code>
+            <p>Output-</p>
+            <code>
+                | ID | Name  | Salary |
+                |----|-------|--------|
+                | 1  | Alice | NULL   |
+                
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr7">
+            <pre>
+            <p>Quesion No. -7 example of update STATEMENT?</p>
+            <code>
+
+                -- Update the salary of employee with ID 1
+                UPDATE Employees
+                SET Salary = 50000
+                WHERE ID = 1;
+
+
+                This UPDATE statement will change the salary of the employee with ID 1 to 50000. After executing this statement, you can check the updated data using a SELECT query:sql
+                SELECT * FROM Employees WHERE ID = 1;
+
+                The output of the SELECT query after the UPDATE statement will show the updated data for the employee with ID 1:
+
+        
+            </code>
+            <p>Output-</p>
+            <code>
+
+                | ID | Name  | Salary |
+                |----|-------|--------|
+                | 1  | Alice | 50000  |
+                
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr8">
+            <pre>
+            <p>Quesion No. 8 example of DELETE statement?</p>
+            <code>
+
+                First, let's assume we have the following data in the Employees table:
+                | ID | Name   | Salary |
+                |----|--------|--------|
+                | 1  | Alice  | 50000  |
+                | 2  | Bob    | 60000  |
+                | 3  | Charlie| 55000  |
+                
+                Now, let's execute a DELETE statement to remove the employee with ID 2 (Bob) from the table:
+
+                -- Delete employee with ID 2
+                        DELETE FROM Employees
+                        WHERE ID = 2;
+
+
+                
+                        After executing this DELETE statement, if we query the Employees table again using a SELECT statement, we'll see the updated data without Bob's record:
+
+                        SELECT * FROM Employees;
+
+                        
+            </code>
+            <p>Output-</p>
+            <code>
+                | ID | Name    | Salary |
+                |----|---------|--------|
+                | 1  | Alice   | 50000  |
+                | 3  | Charlie | 55000  |
+                
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr9">
+            <pre>
+            <p>Quesion No. -9 example of LIMIT statement? </pre>
+            <code>
+
+
+                Assuming we have the following data in the Employees table:
+                | ID | Name    | Salary |
+                |----|---------|--------|
+                | 1  | Alice   | 50000  |
+                | 2  | Bob     | 60000  |
+                | 3  | Charlie | 55000  |
+                | 4  | David   | 48000  |
+                | 5  | Emily   | 52000  |
+             
+                Now, let's execute a SELECT statement with a LIMIT clause to retrieve only the first three employees (ordered by ID):    
+                -- Select the first three employees
+
+
+                SELECT * FROM Employees
+                ORDER BY ID
+                LIMIT 3;
+                
+
+
+        
+            </code>
+            <p>Output-</p>
+            <code>
+                | ID | Name    | Salary |
+                |----|---------|--------|
+                | 1  | Alice   | 50000  |
+                | 2  | Bob     | 60000  |
+                | 3  | Charlie | 55000  |
+                
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr10">
+            <pre>
+            <p>Questions 10. example of MIN and MAX function</p>
+            <code>
+
+
+                | ID | Name    | Salary |
+                |----|---------|--------|
+                | 1  | Alice   | 50000  |
+                | 2  | Bob     | 60000  |
+                | 3  | Charlie | 55000  |
+                | 4  | David   | 48000  |
+                | 5  | Emily   | 52000  |
+
+
+                minimum salary using the MIN function:
+
+                -- Find the minimum salary
+           SELECT MIN(Salary) AS MinSalary FROM Employees;
+
+           the maximum salary using the MAX function:
+
+           
+           -- Find the maximum salary
+           SELECT MAX(Salary) AS MaxSalary FROM Employees;
+           
+            </code>
+            <p>Output-</p>
+            <code> 
+                MINIMUM SALERY
+                | MinSalary |
+                |-----------|
+                | 48000     |
+                
+
+                MAXIMUM SALERY
+
+                | MaxSalary |
+                |-----------|
+                | 60000     |
+
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr11">
+            <pre>
+            <p>Quesion No. -11  example of COUNT, AVG, SUM functions</p>
+            <code>
+
+                Assuming we have the following data in the Employees table:
+
+                | ID | Name    | Salary |
+                |----|---------|--------|
+                | 1  | Alice   | 50000  |
+                | 2  | Bob     | 60000  |
+                | 3  | Charlie | 55000  |
+                | 4  | David   | 48000  |
+                | 5  | Emily   | 52000  |
+
+                COUNT Function:
+                
+
+                -- Count the number of employees
+                SELECT COUNT(*) AS TotalEmployees FROM Employees;
+
+
+                SUM Function:
+
+                -- Calculate the total salary
+                SELECT SUM(Salary) AS TotalSalary FROM Employees;
+
+                AVG Function:
+                
+                -- Calculate the average salary
+                SELECT AVG(Salary) AS AverageSalary FROM Employees;
+
+
+            </code>
+            <p>Output-</p>
+            <code>
+                COUNT
+       
+                | TotalEmployees |
+                |----------------|
+                | 5              |
+
+                SUM
+
+                | TotalSalary |
+                |-------------|
+                | 275000      |
+
+              
+                  AVERAGE
+
+                | AverageSalary |
+                |---------------|
+                | 55000         |
+
+
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr12">
+            <pre>
+            <p>Quesion No. -12 exaple of LIKE OPERATOR </p>
+            <code>
+                Assuming we have the following data in the Employees table:
+
+                | ID | Name       | Salary |
+                |----|------------|--------|
+                | 1  | Alice      | 50000  |
+                | 2  | Bob        | 60000  |
+                | 3  | Charlie    | 55000  |
+                | 4  | David      | 48000  |
+                | 5  | Emily      | 52000  |
+                | 6  | Samantha   | 58000  |
+                | 7  | Michael    | 56000  |
+                | 8  | Stephanie  | 51000  |
+
+                let's use the LIKE statement to search for employees whose names contain the substring "ha":
+
+                -- Search for employees whose names contain the substring "ha"
+
+
+                        SELECT * FROM Employees
+                        WHERE Name LIKE '%ha%';
+
+
+
+        
+            </code>
+            <p>Output-</p>
+            <code>
+            
+                | ID | Name       | Salary |
+                |----|------------|--------|
+                | 1  | Alice      | 50000  |
+                | 6  | Samantha   | 58000  |
+                | 8  | Stephanie  | 51000  |
+                
+
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr13">
+            <pre>
+            <p>Quesion No. -13  exampple of WILDCARDS</p>
+            <code>
+
+                Assuming we have the following data in the Employees table:
+
+                | ID | Name       | Salary |
+                |----|------------|--------|
+                | 1  | Alice      | 50000  |
+                | 2  | Bob        | 60000  |
+                | 3  | Charlie    | 55000  |
+                | 4  | David      | 48000  |
+                | 5  | Emily      | 52000  |
+                | 6  | Samantha   | 58000  |
+                | 7  | Michael    | 56000  |
+                | 8  | Stephanie  | 51000  |
+                
+                
+                1.   Using % wildcard:
+                      Let's use the % wildcard to find employees whose names end with "y".
+                     -- Search for employees whose names end with "y"
+                    SELECT * FROM Employees
+                    WHERE Name LIKE '%y';
+                2.    Using _ wildcard:
+                    Now, let's use the _ wildcard to find employees whose names have exactly six characters.
+                    
+                    -- Search for employees whose names have exactly six characters
+                    SELECT * FROM Employees
+                    WHERE Name LIKE '______';
+
+           
+            </code>
+            <p>Output-</p>
+            <code>
+         1.| ID | Name     | Salary |
+           |----|----------|--------|
+           | 2  | Bob      | 60000  | 
+           | 5  | Emily    | 52000  |
+           | 6  | Samantha | 58000  |
+           | 7  | Michael  | 56000  |
+
+         2. | ID | Name    | Salary |
+            |----|---------|--------|
+            | 1  | Alice   | 50000  |
+            | 2  | Bob     | 60000  |
+            | 4  | David   | 48000  |
+         
+            
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr14">
+            <pre>
+            <p>Quesion No. -14  example of IN statement</p>
+            <code>
+                | ID | Name       | Salary |
+                |----|------------|--------|
+                | 1  | Alice      | 50000  |
+                | 2  | Bob        | 60000  |
+                | 3  | Charlie    | 55000  |
+                | 4  | David      | 48000  |
+                | 5  | Emily      | 52000  |
+                | 6  | Samantha   | 58000  |
+                | 7  | Michael    | 56000  |
+                | 8  | Stephanie  | 51000  |
+
+
+                Let's say we want to find employees whose salaries are either 50000 or 60000. We can use the IN statement for this purpose:
+                
+                -- Search for employees with salaries 50000 or 60000
+                    SELECT * FROM Employees
+                    WHERE Salary IN (50000, 60000);
+
+
+
+        
+            </code>
+            <p>Output-</p>
+            <code>
+                | ID | Name    | Salary |
+                |----|---------|--------|
+                | 1  | Alice   | 50000  |
+                | 2  | Bob     | 60000  |
+                | 5  | Emily   | 52000  |
+
+
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr15">
+            <pre>
+            <p>Quesion No. -15 example of between operator </p>
+            <code>
+                Assuming we have the following data in the Employees table:
+
+                | ID | Name       | Salary |
+                |----|------------|--------|
+                | 1  | Alice      | 50000  |
+                | 2  | Bob        | 60000  |
+                | 3  | Charlie    | 55000  |
+                | 4  | David      | 48000  |
+                | 5  | Emily      | 52000  |
+                | 6  | Samantha   | 58000  |
+                | 7  | Michael    | 56000  |
+                | 8  | Stephanie  | 51000  |
+           
+
+                Let's say we want to find employees whose salaries are between 50000 and 55000, inclusive. We can use the BETWEEN operator for this purpose:
+
+
+                -- Search for employees with salaries between 50000 and 55000
+                SELECT * FROM Employees
+                WHERE Salary BETWEEN 50000 AND 55000;
+                
+       
+            </code>
+            <p>Output-</p>
+            <code>
+                | ID | Name       | Salary |
+                |----|------------|--------|
+                | 1  | Alice      | 50000  |
+                | 3  | Charlie    | 55000  |
+                | 5  | Emily      | 52000  |
+                | 8  | Stephanie  | 51000  |
+
+
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr16">
+            <pre>
+            <p>Quesion No. -16  example of ALIASES. </p>
+            <code>
+                
+                Assuming we have the following data in the Employees table:
+                | ID | Name       | Salary |
+                |----|------------|--------|
+                | 1  | Alice      | 50000  |
+                | 2  | Bob        | 60000  |
+                | 3  | Charlie    | 55000  |
+                | 4  | David      | 48000  |
+                | 5  | Emily      | 52000  |
+                | 6  | Samantha   | 58000  |
+                | 7  | Michael    | 56000  |
+                | 8  | Stephanie  | 51000  | 
+
+
+                Example 1: Table Alias  
+                
+                We'll use an alias E for the Employees table:
+
+                -- Select all columns from Employees table with alias E
+                SELECT E.ID, E.Name, E.Salary
+                FROM Employees AS E;
+
+
+                Example 2: Column Alias
+
+
+                We'll use aliases for columns to make the output more readable: 
+                -- Select ID as EmployeeID and Salary as MonthlySalary
+                SELECT ID AS EmployeeID, Salary AS MonthlySalary
+                FROM Employees;
+
+            
+            </code>
+            <p>Output-</p>
+            <code>
+                | EmployeeID | MonthlySalary |
+                |------------|---------------|
+                | 1          | 50000         |
+                | 2          | 60000         |
+                | 3          | 55000         |
+                | 4          | 48000         |
+                | 5          | 52000         |
+                | 6          | 58000         |
+                | 7          | 56000         |
+                | 8          | 51000         |
+                
+
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr17">
+            <pre>
+            <p>Quesion No. -17 example of JOINS.</p>
+            <code>
+                EMPLOYEE TABLE
+                | ID | Name       | DepartmentID |
+                |----|------------|--------------|
+                | 1  | Alice      | 1            |
+                | 2  | Bob        | 2            |
+                | 3  | Charlie    | 1            |
+                | 4  | David      | 3            |
+                | 5  | Emily      | 2            |
+
+
+                DEPARTMENTS TABLE
+
+                | DepartmentID | DepartmentName |
+                |--------------|----------------|
+                | 1            | Sales          |
+                | 2            | Marketing      |
+                | 3            | HR             |
+
+             1. INNER JOINS
+                An inner join returns rows that have matching values in both tables.
+                SELECT E.ID, E.Name, D.DepartmentName
+                FROM Employees AS E
+                INNER JOIN Departments AS D
+                ON E.DepartmentID = D.DepartmentID;
+
+
+             2. Left Join:
+              A left join returns all rows from the left table (Employees) and the matched rows from the right table (Departments). If there's no match, NULL values are returned for the right table columns.                                                  
+
+
+                    SELECT E.ID, E.Name, D.DepartmentName
+                    FROM Employees AS E
+                    LEFT JOIN Departments AS D
+                    ON E.DepartmentID = D.DepartmentID;
+             3. RIGHT JOIN:
+                A right join returns all rows from the right table (Departments) and the matched rows from the left table (Employees). If there's no match, NULL values are returned for the left table columns.
+              
+                SELECT E.ID, E.Name, D.DepartmentName
+                FROM Employees AS E
+                RIGHT JOIN Departments AS D
+                ON E.DepartmentID = D.DepartmentID;
+             
+            </code>
+            <p>Output-</p>
+            <code>
+             
+                
+             1. INNER JOIN   
+                | ID | Name    | DepartmentName |
+                |----|---------|----------------|
+                | 1  | Alice   | Sales          |
+                | 2  | Bob     | Marketing      |
+                | 3  | Charlie | Sales          |
+                | 4  | David   | HR             |
+                | 5  | Emily   | Marketing      |
+
+              2. LEFT JOIN  
+
+                | ID | Name    | DepartmentName |
+                |----|---------|----------------|
+                | 1  | Alice   | Sales          |
+                | 2  | Bob     | Marketing      |
+                | 3  | Charlie | Sales          |
+                | 4  | David   | HR             |
+                | 5  | Emily   | Marketing      |
+
+
+             3. RIGHT JOIN
+
+                | ID   | Name    | DepartmentName |
+                |------|---------|----------------|
+                | 1    | Alice   | Sales          |
+                | 2    | Bob     | Marketing      |
+                | 3    | Charlie | Sales          |
+                | 4    | David   | HR             |
+                | 5    | Emily   | Marketing      |
+                | NULL | NULL    | Finance        |
+                
+                            
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr18">
+            <pre>
+            <p>Quesion No. -18 example of grant command? </p>
+            <code>
+                Let's say we have a table named employees in a database and we want to grant the SELECT privilege on this table to a user named employee_user. Here's how you would do it in SQL, along with the output of the command:
+                First, let's create the employees table:
+
+
+                CREATE TABLE employees (
+                employee_id INT PRIMARY KEY,
+                first_name VARCHAR(50),
+                last_name VARCHAR(50),
+                department VARCHAR(50)
+            );
+
+            Next, we'll grant the SELECT privilege on the employees table to the user employee_user:
+            GRANT SELECT ON employees TO employee_user;
+            After running this command, the employee_user will have the SELECT privilege on the employees table.
+
+            To verify that the privilege has been granted successfully, we can use the SHOW GRANTS command to see the privileges granted to the employee_user:    
+
+            SHOW GRANTS FOR employee_user;
+
+        
+            </code>
+            <p>Output-</p>
+            <code>
+                GRANT SELECT ON `database_name`.`employees` TO 'employee_user'@'%'
+                This output confirms that the employee_user has been granted the SELECT privilege on the employees table in the specified database (database_name).
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr19">
+            <pre>
+            <p>Quesion No. -19 example of revoke command </p>
+
+            <code>
+                Certainly! Let's use the REVOKE command to revoke previously granted privileges on a table. I'll also provide the output of the REVOKE command.
+                First, let's create a simple table called products:
+                CREATE TABLE products (
+                    product_id INT PRIMARY KEY,
+                    product_name VARCHAR(50),
+                    price DECIMAL(10, 2)
+                );
+                This CREATE TABLE statement creates a table named products with columns for product_id, product_name, and price.
+
+                Now, let's grant some privileges on this table to a user named product_user. We'll grant SELECT and INSERT privileges:
+                GRANT SELECT, INSERT ON products TO product_user;
+                
+
+
+        
+            </code>
+            <p>Output-</p>
+            <code>
+
+                The output of this REVOKE command might look similar to the GRANT command's output:
+                Query OK, 0 rows affected (0.05 sec)
+                This output confirms that the REVOKE command executed successfully without errors (Query OK), didn't modify any existing rows (0 rows affected since it's a privilege revoke), and took a certain amount of time to execute (0.05 sec in this example).
+
+                After executing the REVOKE command, you can verify the remaining privileges granted to the product_user using the SHOW GRANTS command:
+                SHOW GRANTS FOR product_user;
+                The output of this command will show the remaining privileges granted to product_user on the products table, confirming that only the SELECT privilege remains.                   
+
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="arr20">
+            <pre>
+            <p>Quesion No. -19 example of rollback and commit </p>
+            <code>
+                First, let's create the inventory table with some initial data:
+
+                sql
+                CREATE TABLE inventory (
+                    product_id INT PRIMARY KEY,
+                    product_name VARCHAR(50),
+                    quantity INT
+                );
+                
+                INSERT INTO inventory (product_id, product_name, quantity)
+                VALUES
+                    (1, 'Product A', 100),
+                    (2, 'Product B', 150),
+                    (3, 'Product C', 200);
+                    Now, let's start a transaction and make some changes to the inventory table:                                        
+                    START TRANSACTION;
+
+                    -- Decrease the quantity of Product A
+                    UPDATE inventory SET quantity = quantity - 10 WHERE product_id = 1;
+                    
+                    -- Increase the quantity of Product B
+                    UPDATE inventory SET quantity = quantity + 20 WHERE product_id = 2;
+                    At this point, we haven't committed the changes yet. If we check the inventory table:
+                    SELECT * FROM inventory;
+                    The output would show the modified quantities for Product A and Product B within the transaction.
+
+                    Now, let's say we want to commit these changes to make them permanent:                        
+                    COMMIT;
+                    The output of the COMMIT command will depend on your SQL environment but typically confirms that the transaction was committed successfully.
+
+                    If, however, we decide to roll back the changes instead of committing them:                        
+                    ROLLBACK;
+                    The output of the ROLLBACK command will indicate that the transaction was rolled back, undoing the changes made within the transaction.
+
+                    After committing or rolling back, if we query the inventory table again:
+                    
+
+
+
+
+
+
+            </code>
+            <p>Output-</p>
+            <code>
+                SELECT * FROM inventory;
+
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div class="nav2">
+            <div class="logo2">
+                <p id="arr21"></p> Arrays</p>
+            </div>
+            <p id="qcount">Questions=06</p>
+        </div>
+        <div id="2Darr1">
+            <pre>
+            <p>Quesion No. -1 example of groupby command  </p>
+            <code>
+
+
+                Let's create and populate the orders table with some sample data:
+                CREATE TABLE orders (
+                    order_id INT PRIMARY KEY,
+                    customer_id INT,
+                    order_date DATE,
+                    total_amount DECIMAL(10, 2)
+                );
+                
+                INSERT INTO orders (order_id, customer_id, order_date, total_amount)
+                VALUES
+                    (1, 101, '2023-01-05', 150.50),
+                    (2, 102, '2023-01-06', 75.25),
+                    (3, 101, '2023-01-07', 120.00),
+                    (4, 103, '2023-01-08', 200.00),
+                    (5, 102, '2023-01-10', 90.75),
+                    (6, 103, '2023-01-12', 180.50);
+                    SELECT customer_id, SUM(total_amount) AS total_order_amount
+                    FROM orders
+                    GROUP BY customer_id;
+
+            </code>
+            <p>Output-</p>
+            <code>
+                customer_id | total_order_amount
+                --------------------------------
+                101         | 270.50
+                102         | 166.00
+                103         | 380.50
+                
+        
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="2Darr2">
+            <pre>
+            <p>Quesion No. -2 date function </p>
+            <code>
+                CREATE TABLE transactions (
+                    transaction_id INT PRIMARY KEY,
+                    transaction_timestamp DATETIME
+                );
+                
+                INSERT INTO transactions (transaction_id, transaction_timestamp)
+                VALUES
+                    (1, '2023-04-10 08:30:00'),
+                    (2, '2023-04-10 10:45:00'),
+                    (3, '2023-04-11 12:15:00'),
+                    (4, '2023-04-12 09:00:00'),
+                    (5, '2023-04-12 11:30:00');
+
+
+                    SELECT transaction_id, DATE(transaction_timestamp) AS transaction_date
+                    FROM transactions;
+
+                    The output of this query will show the transaction ID along with the corresponding date extracted from the timestamp:
+
+                                            
+                                        
+            </code>
+            <p>Output-</p>
+            <code>
+
+                transaction_id | transaction_date
+                --------------------------------
+                1              | 2023-04-10
+                2              | 2023-04-10
+                3              | 2023-04-11
+                4              | 2023-04-12
+                5              | 2023-04-12
+                             
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        <div id="2Darr3">
+            <pre>
+            <p>Quesion No. -3 example ofcharacter function</p>
+            <code>
+            1. UPPER() and LOWER(): These functions convert a string to uppercase or lowercase, respectively.
+            SELECT UPPER('hello') AS uppercase_result, LOWER('WORLD') AS lowercase_result;
+
+            2.SUBSTRING() or SUBSTR(): This function extracts a substring from a string.
+            SELECT SUBSTRING('Hello World', 7, 5) AS extracted_substring;
+
+            3.CONCAT(): This function concatenates two or more strings.
+            SELECT CONCAT('Hello', ' ', 'World') AS concatenated_string;
+
+
+            4.LENGTH() or LEN(): These functions return the length of a string.
+            SELECT LENGTH('Hello') AS string_length;
+
+
+            5.TRIM(): This function removes leading and trailing whitespace characters from a string.
+            SELECT TRIM('  Hello  ') AS trimmed_string;
+
+
+            6.REPLACE(): This function replaces occurrences of a substring within a string with another substring.
+            SELECT REPLACE('Hello World', 'World', 'Universe') AS replaced_string;
+
+            </code>
+            <p>Output-</p>
+            <code>
+            1.     uppercase_result | lowercase_result
+                    ----------------|-----------------
+                    HELLO           | world
+
+
+            2.      extracted_substring
+                    -------------------
+                    World
+
+                    
+            3.        string_length
+                    -------------
+                    5
+
+            4.       trimmed_string
+                    -------------
+                    Hello
+
+                    
+            5.       replaced_string
+                    ----------------
+                    Hello Universe
+
+            </code>
+            </pre>
+            <div class="borderline"></div>
+        </div>
+        
